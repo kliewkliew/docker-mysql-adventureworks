@@ -1,5 +1,5 @@
 # MySQL-AdventureWorks
-MySQL with the Microsoft AdventureWorks sample database from http://sourceforge.net/projects/awmysql/
+MySQL with the Microsoft AdventureWorks sample database converted for MySQL server, from http://sourceforge.net/projects/awmysql/
 
 ## Building
 `docker build -t kliew/mysql-adventureworks .`
