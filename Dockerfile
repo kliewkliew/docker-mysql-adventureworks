@@ -3,12 +3,13 @@ MAINTAINER Kevin Liew, kliew, kliewkliew
 
 # Install MySQL server
 RUN yum install -y mysql-server
-RUN sed s/bind-address/#bind-address/g /etc/my.cnf
+COPY my.cnf /etc/
 
 # Import AdventureWorks database
 ADD AdventureWorks.sql.tar.gz /tmp/
 RUN service mysqld start && \
-	mysql < /tmp/AdventureWorks.sql
+	mysql < /tmp/AdventureWorks.sql && \
+	mysql -e'GRANT ALL ON *.* TO sqoop@"%" IDENTIFIED BY "sqoop";'
 
 ENTRYPOINT service mysqld start && \
 	tail -f /var/log/mysqld.log
