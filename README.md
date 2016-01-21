@@ -1,3 +1,8 @@
+
+https://github.com/kliewkliew/mysql-adventureworks
+
+https://hub.docker.com/r/kliew/mysql-adventureworks
+
 # MySQL-AdventureWorks
 MySQL with the Microsoft AdventureWorks sample database converted for MySQL server, from http://sourceforge.net/projects/awmysql/
 
