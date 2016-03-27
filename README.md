@@ -17,7 +17,7 @@ http://msftdbprodsamples.codeplex.com/
 ```
 docker kill adventureworks
 docker rm adventureworks
-docker run -it --name adventureworks kliew/mysql-adventureworks
+docker run -d --name adventureworks kliew/mysql-adventureworks
 ```
 or
 ### In the background
