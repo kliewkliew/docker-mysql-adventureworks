@@ -1,5 +1,5 @@
 
-https://github.com/kliewkliew/mysql-adventureworks
+https://github.com/kliewkliew/docker-mysql-adventureworks
 
 https://hub.docker.com/r/kliew/mysql-adventureworks
 
